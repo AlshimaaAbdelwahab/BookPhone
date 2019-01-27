@@ -1,0 +1,66 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/all.min.css"/>
+        <link rel="stylesheet" href="css/index_style.css"/>        
+
+    </head>
+    <body>   
+        
+        <div class="w-75 m-auto py-4">        
+            
+        <button onclick="toggleForm()" id="btnToggle" class="btn mb-4 btn-warning">
+            <i class="fas fa-arrow-alt-circle-up"></i>    
+        </button>    
+        
+    <div id="form-container">       
+        <div class="form-group">
+            <label>Name<!--product Name :--> </label>
+            <input class="form-control" id="productName"/>
+        </div>    
+        <div class="form-group">
+            <label>Phone<!--product price :--> </label>
+            <input class="form-control" id="productPrice"/>
+        </div>          
+        <div class="form-group">
+            <label>Phone Category<!--product category :--> </label>
+            <select class="form-control" id="productCategory">
+            
+            </select>
+        </div>             
+                  
+               
+           <button onclick="addProduct()" class="btn btn-info float-right">add <!--product--></button> 
+            
+            <div class="clearfix"></div>    
+        </div>
+            
+            
+    <table class="table myTable table-striped text-center mt-5">
+        <thead>
+            <th>Name<!--productName--> </th>
+            <th>Phone<!--productPrice --> </th>
+            <th>Phone Category<!--productCategory --> </th>
+        
+        </thead>  
+        <tbody id="tableBody">
+        
+        
+        
+        
+        </tbody>
+            
+    </table>        
+        
+    </div>
+        
+       
+        
+    
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
